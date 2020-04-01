@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="nazwisko">
+<button onClick="klik()"> Sprawdz </button>
+
+<script>
+function klik()
+{
+	var tekst = document.getElementById("nazwisko");
+	if (tekst.match(/[A-Z)[a-z]+ [A-Z][a-z]+/))
+	console.log("Pasuje"); 
+	else 
+	console.log("Nie pasuje");
+}
+</script>
+</body>
+</html>
